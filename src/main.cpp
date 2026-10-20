@@ -49,7 +49,7 @@ class $modify(PredictiveInputBufferKeyboard, CCKeyboardDispatcher) {
         bool isKeyRepeat,
         double timestamp
     ) {
-        if (key == enumKeyCodes::KEY_F6 && isKeyDown && !isKeyRepeat) {
+        if (key == enumKeyCodes::KEY_Zero && isKeyDown && !isKeyRepeat) {
             nextStage();
         }
 
