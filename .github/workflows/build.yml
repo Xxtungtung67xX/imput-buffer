@@ -16,3 +16,10 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           target: Win64
+
+      - name: Upload mod file
+        uses: actions/upload-artifact@v4
+        with:
+          name: mod-geode
+          path: build/*.geode
+          if-no-files-found: warn
